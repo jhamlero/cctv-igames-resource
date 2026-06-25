@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>爱游戏体育 · 信息入口指南</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #faf9f8;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      color: #1e1e1e;
+      line-height: 1.65;
+      padding: 2rem 1rem;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .page {
+      max-width: 760px;
+      width: 100%;
+    }
+
+    /* 极简标题层级 */
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.3rem;
+      color: #0a0a0a;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      font-weight: 500;
+      margin-top: 2.4rem;
+      margin-bottom: 0.75rem;
+      border-bottom: 1px solid #eae7e2;
+      padding-bottom: 0.4rem;
+      color: #232323;
+    }
+
+    h3 {
+      font-size: 1.05rem;
+      font-weight: 500;
+      margin-top: 1.6rem;
+      margin-bottom: 0.5rem;
+      color: #333;
+    }
+
+    p {
+      margin-bottom: 1.1rem;
+      font-size: 1rem;
+      color: #2c2c2c;
+    }
+
+    .subhead {
+      font-size: 1.05rem;
+      color: #5f5b57;
+      margin-bottom: 1.8rem;
+    }
+
+    a {
+      color: #1e3a5f;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s ease;
+    }
+
+    a:hover {
+      border-bottom-color: #1e3a5f;
+    }
+
+    /* 卡片目录感区块 */
+    .directory-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin: 1.8rem 0 1.2rem;
+    }
+
+    .dir-card {
+      background: #ffffff;
+      border: 1px solid #e7e3de;
+      border-radius: 12px;
+      padding: 1rem 1.25rem;
+      transition: box-shadow 0.2s;
+    }
+
+    .dir-card:hover {
+      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    }
+
+    .dir-card span {
+      display: block;
+      font-weight: 500;
+      font-size: 1rem;
+      color: #1e3a5f;
+      margin-bottom: 0.2rem;
+    }
+
+    .dir-card .desc {
+      font-size: 0.95rem;
+      color: #55524e;
+    }
+
+    /* 提示区圆角框 */
+    .info-note {
+      background: #f2efe9;
+      border-left: 4px solid #9a8c7c;
+      border-radius: 0 10px 10px 0;
+      padding: 1rem 1.3rem;
+      margin: 1.8rem 0;
+    }
+
+    .info-note p {
+      margin-bottom: 0.25rem;
+      font-size: 0.95rem;
+    }
+
+    .info-note strong {
+      font-weight: 500;
+      color: #1e2a36;
+    }
+
+    /* 相关信息区（FAQ摘要风格） */
+    .faq-item {
+      border-bottom: 1px solid #eae7e2;
+      padding: 0.75rem 0;
+    }
+
+    .faq-item:last-of-type {
+      border-bottom: none;
+    }
+
+    .faq-q {
+      font-weight: 500;
+      font-size: 1rem;
+      margin-bottom: 0.2rem;
+      color: #1e1e1e;
+    }
+
+    .faq-a {
+      font-size: 0.95rem;
+      color: #55524e;
+    }
+
+    /* 底部 */
+    .footer-note {
+      margin-top: 3rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid #e7e3de;
+      font-size: 0.9rem;
+      color: #6b6762;
+    }
+
+    /* 响应式保留窄度 */
+    @media (max-width: 480px) {
+      h1 { font-size: 1.8rem; }
+      .page { padding: 0 0.25rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- hero 区域：直接说明用途 -->
+    <h1>爱游戏体育</h1>
+    <p class="subhead">一个以赛事与资讯为核心的信息聚合站</p>
+
+    <p>
+      如果你正想快速了解这个网站提供什么、是否适合自己，下面这份指南可以帮你建立初步认知。<br>
+      本站名字出现在每个段落里——<a href="https://m-aigamesports.com">爱游戏体育</a>——它就是你想找的信息起点。
+    </p>
+
+    <!-- 目录感布局：知识库入口卡片 -->
+    <h2>📋 站点内容速览</h2>
+    <div class="directory-grid">
+      <div class="dir-card">
+        <span>赛事动态</span>
+        <div class="desc">覆盖主流电竞赛事、赛程预告、比分追踪，以及赛事背后的队伍与选手情报。</div>
+      </div>
+      <div class="dir-card">
+        <span>游戏攻略与解析</span>
+        <div class="desc">版本更新解读、英雄/角色数据、战术思路，偏向实用与理解向内容。</div>
+      </div>
+      <div class="dir-card">
+        <span>行业资讯</span>
+        <div class="desc">俱乐部变动、游戏厂商动态、政策风向，保持对电竞生态的观察。</div>
+      </div>
+      <div class="dir-card">
+        <span>社区精选</span>
+        <div class="desc">用户投稿、讨论热点、赛事复盘，不同视角的体育精神表达。</div>
+      </div>
+    </div>
+
+    <!-- 说明区：网站定位 -->
+    <h2>📌 这里适合谁</h2>
+    <p>
+      无论是偶尔看看比赛的观众，还是深度参与讨论的爱好者，都可以在这里找到对应的信息层。
+      内容不刻意制造焦虑，也没有浮夸的预测，更多是整理、归纳和呈现。
+    </p>
+    <p>
+      如果你在找一个语气温和、侧重内容质量而非广告轰炸的电竞信息站，<a href="https://m-aigamesports.com">爱游戏体育</a>值得你花几分钟逛一逛。
+    </p>
+
+    <!-- 提示区 -->
+    <div class="info-note">
+      <p><strong>📎 使用提示</strong></p>
+      <p>· 首页内容会随赛事阶段更新，建议不定期回来看看。</p>
+      <p>· 文章内附有数据来源或参考链接，方便你进一步核实。</p>
+      <p>· 如果遇到访问问题，可稍后重试，通常与网络环境有关。</p>
+    </div>
+
+    <!-- 相关信息区：FAQ 摘要形式 -->
+    <h2>❓ 常见疑问摘要</h2>
+
+    <div class="faq-item">
+      <div class="faq-q">网站只关注某一款游戏吗？</div>
+      <div class="faq-a">不是。目前覆盖多款主流竞技游戏，包括但不限于 MOBA、FPS、自走棋等类别，范围会随赛季动态调整。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">内容更新频率如何？</div>
+      <div class="faq-a">常规情况下每周 3–5 次更新，大型赛事期间会增加快讯和复盘内容。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">是否需要注册才能浏览？</div>
+      <div class="faq-a">绝大多数内容可以直接阅读，部分互动功能（如评论、收藏）可能需要简单注册。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">有 APP 或移动端版本吗？</div>
+      <div class="faq-a">目前优先优化网页端体验，移动端适配良好，可以直接在浏览器中使用。</div>
+    </div>
+
+    <!-- 自然嵌入链接的结束语 -->
+    <p style="margin-top: 1.6rem;">
+      如果你对某个板块特别感兴趣，不妨直接进入<a href="https://m-aigamesports.com">爱游戏体育</a>的首页开始探索。
+      没有强制推送，没有繁琐弹窗，你可以安静地浏览。
+    </p>
+
+    <div class="footer-note">
+      <span>信息入口 · 温和引导 · 无广告干扰</span>
+    </div>
+
+  </div>
+</body>
+</html>
